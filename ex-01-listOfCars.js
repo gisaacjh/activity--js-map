@@ -6,8 +6,9 @@
  *      with this format: `{ make: '...', model: '...' }
  *
  * (b) combine `.map()` with `.join()` to put the models on the DOM
- *     in '<span>' elements
- *     example: '<span>Accord</span><span>Pathfinder</span><span>Corolla</span>...'
+ *     in '<span>' elements inside the `<div class="cars-container"></div>` element
+ *
+ *      '<span>Accord</span><span>Pathfinder</span><span>Corolla</span>...'
 **/
 
 
@@ -45,7 +46,7 @@ var listOfStudents = [
 
 
 // (II) `listOfStudents`
-// - (c) Map an array of ages
+// - (c) Map an array of integer from the `age` property that is on each object
 //
 // - (d) Map names to and add a new property of that includes an 'email' property for each element
 //   - format for 'email' value is first initial + last name + '@happygroup.com'.
