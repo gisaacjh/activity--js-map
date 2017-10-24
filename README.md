@@ -4,6 +4,9 @@
 You will need to use the `.map()` method to complete these exercises.
 
 
+### Setup
+
+
 ### Reminder
 The map method is executed on an array and returns a new transformed array.
 
