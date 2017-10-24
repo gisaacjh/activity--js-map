@@ -5,7 +5,19 @@ You will need to use the `.map()` method to complete these exercises.
 
 
 ### Setup
+```sh
+# (1) cd into warmup folder and make directory
+cd ~/Documents/muktek/warmups
+mkdir js-map
+cd js-map
 
+# (2) curl and unzip the install files
+curl https://raw.githubusercontent.com/muktek/activity--js-map/master/warmup-files.zip > warmup-files.zip
+
+unzip warmup-files.zip
+
+#(3) Complete the exercises in the .js files!
+```
 
 ### Reminder
 The map method is executed on an array and returns a new transformed array.
