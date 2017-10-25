@@ -40,10 +40,22 @@ var listOfStudents = [
   { first: 'Atushi', last: 'Eto', gender: 'male', age: 25 },
   { first: 'Lin', last: 'Ying', gender: 'female', age: 35 },
   { first: 'Yao', last: 'Ling', gender: 'male', age: 45 },
-]
+];
 
+var studentAgesList = listOfStudents.map(function(person) {
+    return person.age
+});
+// console.log(studentAgesList);
 
+var listOfStudentsPlusEmail = listOfStudents.map(function(obj) {
+  var initial = obj.first[0].toLowerCase()
+  var lastName = obj.last.toLowerCase()
+  // console.log(obj.email);
+    obj.email = initial + lastName + '@happygroup.com'
+    return obj
+});
 
+console.log(listOfStudents);
 //--------- Tests for part (a) ---------//
 
 // +1 Check that studentAges is NOT undefiend and is an array

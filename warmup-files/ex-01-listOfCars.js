@@ -25,13 +25,25 @@ var listOfCars = [
 ]
 
 // (a) make the .map function work
-var listOfCarObjects = listOfCars.map(function(){
+var listOfCarObjects = listOfCars.map(function (cars) {
+   var idCar = cars.split(" ")
+   var make = idCar[0]
+   var model = idCar[1]
+   var  carrito = {'make': make,
+                  'model': model
+                };
+document.querySelector('.cars-container').innerHTML += `<span>${carrito.model}</span>
+                                                        <span>${carrito.make}</span>
+  `;
+                return carrito
+});
 
-})
 
-
+// console.log(carrito);
 // (b) you code for part-b below...
 
+
+// console.log(listOfCarObjects);
 
 
 //--------- Tests for part (a) ---------//
